@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+.task--form {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+input{
+    outline: none;
+    font-size: 24px;
+}
+
+input:focus{
+    outline: 2px solid #535bf2;
+}
+
+input:hover{
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.task--container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.task--item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border: 1px solid gray;
+    border-radius: 12px;
+    padding: 4px 24px;
+}
+
+.task--item p, .task--item input {
+    width: 250px;
+    font-size: 20px;
+}
+
+.task--buttons{
+    display: flex;
+    gap: 12px;
+}
+
+.task--buttons .edit {
+    background-color: rgb(15, 15, 119);
+}
+
+.task--buttons .save {
+    background-color: rgb(15, 87, 15);
+}
+
+.task--buttons .delete {
+    background-color: rgb(114, 16, 16);
+}
+
+@media screen and (max-width: 768px) {
+
+    #root{
+        padding: 12px;
+    }
+
+    .App h1{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .task--form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+
+    .task--container{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 24px;
+        gap: 24px;
+    }
+
+    .task--item{
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .task--item p{
+        width: 100%;
+    }
+
+    .task--buttons{
+        padding-bottom: 12px;
+    }
+
+}
