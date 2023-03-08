@@ -30,8 +30,10 @@ const TaskList = () => {
     const handleSave = (e) => {
         let editId = parseInt(e.target.id)
         saveTask(editId)
-        updateTask(task, editId)
-        setTask("")
+        if (task.length >= 1) {
+            updateTask(task, editId)
+            setTask("")
+        }
     }
 
 
