@@ -32,7 +32,7 @@ const TaskList = () => {
         saveTask(editId)
         if (task.length >= 1) {
             updateTask(task, editId)
-            setTask("")
+            setTask("");
         }
     }
 
