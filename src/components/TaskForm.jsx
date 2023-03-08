@@ -13,7 +13,9 @@ const TaskForm = () =>{
 
     const handleInput = (e) => {
         const value = e.target.value
-        setTaskText(value)
+        if (value) {
+            setTaskText(value)
+        }
     }
 
     const handleClick = (e) => {
